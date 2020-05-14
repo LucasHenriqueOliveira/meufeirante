@@ -285,7 +285,7 @@ export default function List() {
 					<Container className={classes.heroContent}>
 						<form className={classes.root} onSubmit={handleSearch}>
 							<Grid container spacing={1}>
-							<Grid item xs={2} sm={2} md={2}>
+							<Grid item xs={3} sm={2} md={2}>
 								<FormControl>
 								<InputLabel id="labelUF">UF</InputLabel>
 								<Select
@@ -303,7 +303,7 @@ export default function List() {
 								</Select>
 								</FormControl>
 							</Grid>
-							<Grid item xs={10} sm={5} md={5}>
+							<Grid item xs={9} sm={5} md={5}>
 								<FormControl className={classes.select}>
 									<Autocomplete
 										id="city"
