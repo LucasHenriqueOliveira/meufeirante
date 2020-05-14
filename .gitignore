@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+src/servicos/lib/configs/*
+src/template/cache/*
+src/template/cache/
+node_modules/
+node_modules/*
+datadir
+vendor
+/src/nbproject/private/
+#src/servicos/lib/connection_banco.php
+.env
+*.env

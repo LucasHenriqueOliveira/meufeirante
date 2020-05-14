@@ -1,0 +1,212 @@
+.register-container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .register-container .content {
+    width: 100%;
+    padding: 50px;
+    background: #f0f0f5;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+ 
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .register-container .content section {
+    width: 100%;
+    max-width: 380px;
+ }
+ 
+ .register-container .content section h1 {
+    margin: 64px 0 32px;
+    font-size: 32px;
+ }
+ 
+ .register-container .content section p {
+    font-size: 18px;
+    color: #737380;
+    line-height: 32px;
+ }
+ 
+ .register-container .content form {
+    width: 100%;
+    max-width: 550px;
+ }
+ 
+ .register-container .content form .input-group {
+    display: flex;   
+ }
+ 
+ .register-container .content form .input-group input + input {
+    margin-left: 8px;
+ }
+
+ .register-container .content section img {
+   width: 50%;
+ }
+
+.register-container .content form .neighborhood,
+.register-container .content form .products,
+.register-container .content form .type {
+   height: 60px;
+   color: #6e6e75;
+   border-radius: 8px;
+   border: 2px solid transparent;
+   transition: border 0.2s ease-in-out;
+   background-color: #fff;
+   margin-top: 7px;
+   text-indent: 15px;
+}
+
+.register-container .content form .input-group .city {
+   width: 75%;
+}
+
+.register-container .content form .neighborhood,
+.register-container .content form .products,
+.register-container .content form .type {
+   width: 100%;
+}
+
+.register-container .content form .name,
+.register-container .content form .email,
+.register-container .content form .whatsapp, 
+.register-container .content form .password,
+.register-container .content form .address,
+.register-container .content form .neighborhood,
+.register-container .content form .products,
+.register-container .content form .type,
+.register-container .content form .input-group .uf,
+.register-container .content form .input-group .city {
+   width: 100%;
+   background-color: #fff;
+   border-radius: 8px;
+   margin: 10px;
+   margin-bottom: 0;
+   margin-left: 0;
+}
+
+.register-container .content form .input-group .uf,
+.register-container .content form .input-group .city {
+   height: 55px;
+}
+
+.register-container .content form .input-group label {
+   z-index: 1;
+}
+
+.register-container .MuiFormLabel-root.Mui-focused {
+   color: rgba(0, 0, 0, 0.54) !important;
+}
+
+.makeStyles-selectUF-2 .MuiFormLabel-root {
+   margin-top: 7px;
+}
+
+.makeStyles-selectUF-2 .MuiFormLabel-root,
+.makeStyles-selectCity-3 .MuiFormLabel-root,
+.makeStyles-selectNeighborhood-4 .MuiFormLabel-root,
+.makeStyles-selectProducts-5 .MuiFormLabel-root,
+.makeStyles-selectType-6 .MuiFormLabel-root {
+   margin-left: 15px !important;
+}
+
+.makeStyles-selectUF-2 .MuiSelect-select {
+   margin-left: 10px !important;
+}
+
+.makeStyles-selectNeighborhood-4 .MuiSelect-select,
+.makeStyles-selectProducts-5 .MuiSelect-select,
+.makeStyles-selectType-6 .MuiSelect-select {
+   margin-left: 0 !important;
+}
+
+.makeStyles-selectCity-3 {
+   margin-right: 0 !important;
+   margin-left: 10px !important;
+}
+
+.MuiStepIcon-root.MuiStepIcon-active,
+.MuiStepIcon-root.MuiStepIcon-completed {
+   color: var(--primary-color) !important;
+}
+
+.MuiCheckbox-colorSecondary.Mui-checked {
+   color: var(--primary-color) !important;
+}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {
+   .register-container .content form {
+      width: 100%;
+      max-width: 400px;
+   }
+}
+
+@media (max-width: 768px) {
+   
+   .register-container .content {
+      padding: 30px;
+      display: block;
+   }
+
+   .register-container .content section h1 {
+      margin-top: 24px;
+   }
+
+   .register-container .content form {
+      margin-top: 20px;
+   }
+
+   .register-container .content form .name,
+   .register-container .content form .email,
+   .register-container .content form .whatsapp, 
+   .register-container .content form .password,
+   .register-container .content form .address,
+   .register-container .content form .neighborhood,
+   .register-container .content form .products,
+   .register-container .content form .type,
+   .register-container .content form .input-group .uf,
+   .register-container .content form .input-group .city {
+      margin-left: 0;
+   }
+
+   .makeStyles-selectUF-2 .MuiFormLabel-root,
+   .makeStyles-selectCity-3 .MuiFormLabel-root,
+   .makeStyles-selectNeighborhood-4 .MuiFormLabel-root,
+   .makeStyles-selectProducts-5 .MuiFormLabel-root,
+   .makeStyles-selectType-6 .MuiFormLabel-root {
+      margin-left: 15px !important;
+   }
+
+   .makeStyles-selectUF-2 .MuiSelect-select {
+      margin-left: 10px !important;
+   }
+
+   .makeStyles-selectNeighborhood-4 .MuiSelect-select,
+   .makeStyles-selectProducts-5 .MuiSelect-select,
+   .makeStyles-selectType-6 .MuiSelect-select {
+      margin-left: 0 !important;
+   }
+
+   .makeStyles-selectCity-3 {
+      margin-right: 0 !important;
+      margin-left: 10px !important;
+   }
+
+   .register-container .content form {
+      width: 100%;
+      max-width: 360px;
+      min-height: 400px;
+   }
+}
+
+@media (max-width: 480px) {}
+ 

@@ -1,0 +1,8 @@
+.MuiFormControl-root {
+    width: 100% !important;
+}
+
+.MuiAppBar-colorPrimary,
+.MuiButton-containedPrimary {
+    background-color: #0a2664 !important;
+}

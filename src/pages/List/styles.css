@@ -1,0 +1,13 @@
+.MuiAppBar-colorPrimary,
+.MuiButton-containedPrimary {
+    background-color: #0a2664 !important;
+}
+
+.MuiFormControl-root {
+    width: 100% !important;
+}
+
+.text {
+    display: inline;
+    font-size: 14px !important;
+}

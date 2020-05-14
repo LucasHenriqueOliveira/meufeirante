@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  meufeirante-app:
+    container_name: meufeirante-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    external_links:
+      - ifeira-api:ifeira-api
+    ports:
+      - 88:80
+      - 4443:443
+    networks:
+      - meufeirante
+
+networks:
+  meufeirante:
+    external: true
