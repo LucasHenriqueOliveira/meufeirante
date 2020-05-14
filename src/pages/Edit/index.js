@@ -105,8 +105,8 @@ export default function Edit() {
 
 	const token = Auth.getToken();
 	const dados = JSON.parse(Auth.getDados());
-	const [feirante, setFeirante] = useState(dados[0]);
-	const [bairrosEntrega, setBairrosEntrega] = useState(dados[0].bairrosDeEntrega);
+	const [feirante, setFeirante] = useState(dados);
+	const [bairrosEntrega, setBairrosEntrega] = useState(dados.bairrosDeEntrega);
 
 	const states = [
 		{ sigla: 'AC', nome: 'acre' },
@@ -297,7 +297,7 @@ export default function Edit() {
 				headers: {"Authorization" : "Bearer " + token }
 			}).then(response => {
 				if(response.data.ok) {
-					localStorage.setItem('dados', JSON.stringify(response.data.dados));
+					localStorage.setItem('dados', JSON.stringify(response.data.dados[0]));
 					enqueueSnackbar(response.data.message, { 
 						variant: 'success',
 						anchorOrigin: {
