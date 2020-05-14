@@ -11,3 +11,5 @@ vendor
 #src/servicos/lib/connection_banco.php
 .env
 *.env
+letsencrypt
+letsencrypt/
