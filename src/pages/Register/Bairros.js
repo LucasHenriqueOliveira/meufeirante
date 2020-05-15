@@ -21,7 +21,6 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
 import { Link } from 'react-router-dom';
-import { useSnackbar } from 'notistack';
 
 const useStyles = makeStyles((theme) => ({
 	formControl: {
@@ -56,7 +55,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Bairros({ setForm, formData, onChangeBairros }) {
     const { endereco } = formData;
-    const { enqueueSnackbar } = useSnackbar();
     const [cities, setCities] = useState([]);
     const [neighborhoods,setNeighborhoods] = useState([]);
     const [city, setCity] = useState('');
