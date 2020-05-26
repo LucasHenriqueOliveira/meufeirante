@@ -238,16 +238,14 @@ export default function Home() {
                 <FiCornerDownRight size={16} />
                 Eu sou feirante
               </Link>
-              <br />
-
-              <Link className="back-link" to="#">
-                <FiMail />
-                contato@meufeirante.com.br
-              </Link>
             </div>
           </div>
           <div className="hero_img-container">
             <img src={feiraImg} alt="Feira" />
+            <Link className="back-link" to="#">
+              <FiMail />
+              contato@meufeirante.com.br
+            </Link>
           </div>
         </div>
       </section>
