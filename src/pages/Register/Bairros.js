@@ -121,12 +121,14 @@ export default function Bairros({ setForm, formData, onChangeBairros }) {
     const handleAdd = () => {
         let bairro = { id: neighborhood.id, uf: uf, city: city.name, neighborhood: neighborhood.name};
         let list = localStorage.getItem('bairros');
-        if (list.length) {
+        if (list && list.length) {
             bairros = JSON.parse(list);
             bairros.push(bairro);
             localStorage.setItem('bairros', JSON.stringify(bairros));
         } else {
-            localStorage.setItem('bairros', JSON.stringify(formData.bairros));
+            let arr = [];
+            arr.push(bairro);
+            localStorage.setItem('bairros', JSON.stringify(arr));
         }
         
         setBairrosEntrega(bairrosEntrega => [...bairrosEntrega, bairro]);
