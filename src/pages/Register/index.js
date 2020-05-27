@@ -222,17 +222,17 @@ export default function Register() {
       let produtos = [];
       formData.products.forEach(element => {
          if (element.checked) {
-            produtos.push(element._id);
+            produtos.push(element.id);
          }
       });
 
       let tipos = [];
       formData.types.forEach(element => {
          if (element.checked) {
-            tipos.push(element._id);
+            tipos.push(element.id);
          }
       });
-
+      
       let bairros = [];
       formData.bairros.forEach(element => {
          bairros.push(element.id);
